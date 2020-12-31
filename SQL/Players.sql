@@ -1,17 +1,18 @@
 USE [IPL_Project]
 GO
 
-/****** Object:  Table [dbo].[Players_Data]    Script Date: 17/12/2020 11:23:14 AM ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
+/****** Object:  Table [dbo].[Players]    Script Date: 17/12/2020 11:30:51 AM ******/
+SET ANSI_NULLS ON 
 GO
 
 SET ANSI_PADDING ON
 GO
 
-CREATE TABLE [dbo].[Players_Data](
+IF OBJECT_ID('[dbo].[Players]') IS NOT NULL
+DROP TABLE [dbo].[Players]
+
+
+CREATE TABLE [dbo].[Players](
 	[player_code] [varchar](50) NULL,
 	[player_id] [varchar](50) NULL,
 	[full_name] [varchar](50) NULL,
