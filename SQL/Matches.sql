@@ -13,8 +13,8 @@ DROP TABLE [dbo].[Matches]
 
 
 CREATE TABLE [dbo].[Matches](
-	[id] [varchar](50) NULL,
-	[season] [varchar](50) NULL,
+	[id] [int] NOT NULL,
+	[season] [int] NULL,
 	[city] [varchar](50) NULL,
 	[date] [varchar](50) NULL,
 	[team1] [varchar](50) NULL,
@@ -22,10 +22,10 @@ CREATE TABLE [dbo].[Matches](
 	[toss_winner] [varchar](50) NULL,
 	[toss_decision] [varchar](50) NULL,
 	[result] [varchar](50) NULL,
-	[dl_applied] [varchar](50) NULL,
+	[dl_applied] [int] NULL,
 	[winner] [varchar](50) NULL,
-	[win_by_runs] [varchar](50) NULL,
-	[win_by_wickets] [varchar](50) NULL,	
+	[win_by_runs] [int] NULL,
+	[win_by_wickets] [int] NULL,	
 	[player_of_match] [varchar](50) NULL,
 	[venue] [varchar](100) NULL,
 	[umpire1] [varchar](50) NULL,	
